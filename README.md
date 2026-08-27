@@ -66,3 +66,7 @@ Copyright © 2026 上海如静知华信息科技有限公司。
 | ![微信咨询二维码一](docs/images/zhuatech-wechat-consulting.png) | ![微信咨询二维码二](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO：统计过程控制系统、SPC系统源码、企业数字化、Java企业系统、Vue管理系统、知华科技、上海如静知华信息科技有限公司。
+
+## V2.0 专业过程控制域
+
+新增质量特性、规格与控制限、样本、判异信号和 CAPA 模型。系统计算 Cp/Cpk，自动执行三西格玛越界和连续八点同侧规则；异常必须经过分派、原因分析、纠正措施、证据登记和独立有效性验证。专业入口为“过程控制中心”，API 根路径为 `/api/spc-ops`。

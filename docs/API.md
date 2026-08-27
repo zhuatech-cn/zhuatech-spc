@@ -36,3 +36,15 @@
 | `ruleViolation` | boolean | 存在控制图判异 |
 
 接口统一返回 `ApiResponse`；业务冲突使用 HTTP 409，参数错误使用 400，未认证使用 401，无权限使用 403。
+
+## 专业 SPC 接口
+
+| 方法 | 路径 | 说明 |
+| --- | --- | --- |
+| GET | `/api/spc-ops/dashboard` | 质量特性和异常总览 |
+| POST | `/api/spc-ops/characteristics` | 创建质量特性与规格 |
+| POST | `/api/admin/spc-ops/characteristics/{id}/activate` | 启用控制图 |
+| POST | `/api/spc-ops/characteristics/{id}/samples` | 采集样本并自动判异 |
+| POST | `/api/spc-ops/signals/{id}/assign` | 分派过程异常 |
+| POST | `/api/spc-ops/signals/{id}/corrective-action` | 提交根因、措施和证据 |
+| POST | `/api/admin/spc-ops/signals/{id}/verify` | 验证纠正措施有效性 |
